@@ -1,6 +1,5 @@
 <html>
 <head>
-<meta charset="UTF-8">
 <title></title>
 <link rel="stylesheet" href="../../res/css/Metro/metro.css" />
 <link rel="stylesheet" href="../../res/css/Metro/metro-icons.css"/>
