@@ -41,6 +41,9 @@ $USER_NAME="JAndres";
 			<div id="cell-content" class="cell auto-size padding20 bg-white">
 				<h1 class="text-light">Clientes
 				<span class="mif-user place-right"></span>
+                                <?php 
+                                echo 'hola mundo';
+                                ?>
 				</h1>				
 				<hr class="thin bg-grayLighter">
 				<button class="button primary" onclick=""><img src="../../res/images/plus-white.png"/>Agregar Cliente</button>
