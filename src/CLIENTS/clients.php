@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 session_start();
 include("../../res/php_functions/PHPFunctions.php");
@@ -67,7 +67,7 @@ $userName = $_SESSION['user_name'];
         $("#clients_table").DataTable();
     </script>
 </html>
-=======
+
 <?php
 include("../../res/php_functions/PHPFunctions.php");
 $USER_NAME="JAndres";
@@ -142,4 +142,4 @@ $USER_NAME="JAndres";
 	$("#clients_table").DataTable();
 </script>
 </html>
->>>>>>> origin/master
+
