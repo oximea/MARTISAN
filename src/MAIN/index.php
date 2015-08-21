@@ -1,7 +1,7 @@
 <?php
-	session_start();
-	$userName=$_POST['user_name'];
-	$password=$_POST['user_password'];
+    session_start();
+    $userName=$_SESSION['user_name'];
+	
 ?>
 <html>
 <head>
@@ -28,9 +28,9 @@
 							<ul class="unstyled-list fg-dark">
 								<li><a class="fg-dark fg-hover-blue" href="#"> Perfil </a></li>
 								<li><a class="fg-dark fg-hover-blue" href="#">
-										Configuración </a></li>
+										ConfiguraciÃ³n</a></li>
 								<li><a class="fg-dark fg-hover-blue" href="#"> Cerrar
-										Sesión </a></li>
+										SesiÃ³n </a></li>
 							</ul>
 						</div>
 					</div>
