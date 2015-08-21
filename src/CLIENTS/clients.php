@@ -1,6 +1,7 @@
 <?php
+session_start();
 include("../../res/php_functions/PHPFunctions.php");
-$USER_NAME="JAndres";
+$userName=$_SESSION['user_name'];
 ?>
 <html>
 <head>
@@ -9,7 +10,6 @@ $USER_NAME="JAndres";
 <link rel="stylesheet" href="../../res/css/Metro/metro.css" />
 <link rel="stylesheet" href="../../res/css/Metro/metro-icons.css"/>
 <link rel="stylesheet" href="../../res/css/main.css" />
-<link rel="stylesheet" href="../../res/css/simplePagination.css" />
 </head>
 <body>
 <form id="mainForm">
@@ -19,7 +19,7 @@ $USER_NAME="JAndres";
 					Martisan</a>
 				<div class="app-bar-element place-right">
 					<span class="dropdown-toggle"> <span class="mif-cog"></span>
-						<?php echo $USER_NAME;?>
+						<?php echo $userName;?>
 					</span>
 					<div
 						class="app-bar-drop-container padding10 place-right no-margin-top block-shadow fg-dark"
@@ -47,11 +47,9 @@ $USER_NAME="JAndres";
 				<hr class="thin bg-grayLighter">
 				<div id="table_content">	
 					<table id="clients_table" class="dataTable table striped hovered border bordered" data-role="datatable" data-searching="true">				
-						<?php						
-							$databaseName="tradeassistant";
-							$tableName="products_pr";
-							PHPFunctions::getClientsData($databaseName,$tableName);
-							?>
+						<?php					
+							PHPFunctions::getClientsData($userName);
+						?>
 					</table>
 				</div>				
 			</div>

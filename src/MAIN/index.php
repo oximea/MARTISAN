@@ -1,5 +1,11 @@
+<?php
+	session_start();
+	$userName=$_POST['user_name'];
+	$password=$_POST['user_password'];
+?>
 <html>
 <head>
+<meta charset="UTF-8" />
 <title></title>
 <link rel="stylesheet" href="../../res/css/Metro/metro.css" />
 <link rel="stylesheet" href="../../res/css/Metro/metro-icons.css"/>
@@ -14,7 +20,7 @@
 						Martisan</a>
 					<div class="app-bar-element place-right">
 						<span class="dropdown-toggle"> <span class="mif-cog"></span>
-							JAndres
+							<?php echo $userName;?>
 						</span>
 						<div
 							class="app-bar-drop-container padding10 place-right no-margin-top block-shadow fg-dark"
@@ -85,6 +91,15 @@
 				</div>
 			</a>
 		</div>
+
+		<div id="welcome_dialog" class="padding10 align-center" data-role="dialog" data-type="default" data-overlay="true" data-overlay-color="op-dark" data-close-button="true" data-width="300px" data-height="70px" data-hide="2000">
+			<h3>Bienvenido 
+				<?php 
+					echo $userName;
+					$_SESSION['user_name']=$userName;
+				?>
+			</h3>
+		</div>
 	</form>
 </body>
 <script src="../../res/js/jQuery/jquery-1.11.3.min.js"></script>
@@ -92,7 +107,8 @@
 <script src="../../res/js/indexJS.js"></script>
 <script>
 	$(document).ready(function(){
-		alert("Bienvenido JAndres");
+		var dialog =$('#welcome_dialog').data('dialog');
+		dialog.open();
 	});
 </script>
 </html>
