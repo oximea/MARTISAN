@@ -41,12 +41,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             <div class="input-control password full-size" data-role="input">
                 <label for="user_password">Contraseña</label>
                 <input style="padding-right: 42px;" name="user_password" id="user_password" type="password" />
-                <button type="button" tabindex="-1" class="button helper-button reveal"><img class="icon icons8-Visible" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABT0lEQVRIie2Uq24CQRSGP1GBrEBU8AiIFYgViKYKgURUIkiKaBpEH6DJCgQCwQMgmmYFTVasQFTwABVNFQ9RsbJiBRVzJpxOhmWgpmL/5GQ35/bPucxAjRr/EU1gCCTAEtiILEU3FJ+zcAH0gBVQArsjUgIZ0JfYIHSBl4Dkh+QVuDlGcgd8/oHEyhZ4OFTdoyfgG0gDEj8DhUefuCQDj1MKXAHTAKI5cClf1za2JDG/B14CE3WIdQDRRvmPPPn6SNk66N2pNg8gyp2YD8eeATw57doBHRWUBBDpWcSiWyn7FKAh5UbimEmVFk3gq4KkAFrKP2XfypiKuxVJAj2nHv6tKiSRxUT0177EPtiAe6VrYVqUiyROJbeeAwZhgNmYN6Bd4ddmvzAnk1hEmJmVmL7PMfdiDCxEZ23dc0k0OpjNyTDPy1b+Z5wwjxo1APgBLVq831S5IEEAAAAASUVORK5CYII=" width="26" height="26"/></button>
+                <button type="button" tabindex="-1" class="button helper-button reveal"><span class="mif-eye"></span></button>
             </div>
             <br />
             <br />
             <div class="form-actions">
-                <button type="submit" id="btnSubmit" class="button primary">OK</button>
+                <button type="submit" class="button primary">OK</button>
                 <button type="button" class="button link">CANCELAR</button>
             </div>
         </form>
