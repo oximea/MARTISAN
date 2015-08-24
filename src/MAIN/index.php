@@ -23,7 +23,7 @@ $userName = $_SESSION['user_name'];
                             </span>
                             <div
                                 class="app-bar-drop-container padding10 place-right no-margin-top block-shadow fg-dark"
-                                style="width: 200px" data-no-close="false" data-role="dropdown">
+                                style="width: 200px" data-no-close="true" data-role="dropdown">
                                 <ul class="unstyled-list fg-dark">
                                     <li><a class="fg-dark fg-hover-blue" href="#"> Perfil </a></li>
                                     <li><a class="fg-dark fg-hover-blue" href="#">

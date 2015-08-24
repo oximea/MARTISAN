@@ -6,7 +6,8 @@ class PHPFunctions{
 	public static function getClientsData($userName){
 		global $CON;
                 
-		$query="SELECT * FROM tradeassistant.contacts_con;";
+                $query="SELECT * FROM tradeassistant.customers_cu WHERE ID_CON='".$userName."';";
+		//$query="SELECT * FROM tradeassistant.contacts_con;";
                 $data=mysqli_query($CON,$query);
 		$columns=array("NUMERO","NOMBRE","APELLIDO","CORREO","CORREO ALT","TELEFONO","MENSAJE","DIRECCION","NOTAS");
                 $arrLength=count($columns);

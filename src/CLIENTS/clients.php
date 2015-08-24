@@ -15,7 +15,7 @@ $userName = $_SESSION['user_name'];
         <form id="mainForm">
             <header class="app-bar fixed-top navy" data-role="appbar">
                 <div class="container">
-                    <a class="app-bar-element branding" href="#">SW Assistant -
+                    <a class="app-bar-element branding" href="../MAIN/index.php">SW Assistant -
                         Martisan</a>
                     <div class="app-bar-element place-right">
                         <span class="dropdown-toggle"> <span class="mif-cog"></span>
